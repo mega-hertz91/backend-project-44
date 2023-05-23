@@ -6,6 +6,6 @@ import startGame from '../games/index.js';
 // Init player
 const name = getName();
 // Init game by name
-const game = startGame('gcd');
+const game = startGame('progression');
 // Start game
 game(name);

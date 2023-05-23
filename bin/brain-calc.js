@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { GAME_ROUND_COUNT } from '../src/constants.js';
 import getName from '../src/cli.js';
 import startGame from '../games/index.js';
 
@@ -9,4 +8,4 @@ const name = getName();
 // Init game by name
 const game = startGame('calc');
 // Start game
-game(name, GAME_ROUND_COUNT);
+game(name);

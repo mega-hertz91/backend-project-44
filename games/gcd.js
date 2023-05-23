@@ -1,19 +1,22 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
-import { MATH_SYMBOLS, MATH_OPERATIONS } from '../src/constants.js';
+import { randomNumber } from '../src/utils.js';
 
-const calcGame = (name) => {
-  const operationList = [];
+export default (name) => {
+  const nod = (n, m) => {
+    if (m > 0) {
+      const k = n % m;
+      return nod(m, k);
+    }
+
+    return Math.abs(n);
+  };
 
   const { values, rightAnswers } = generateQuestions(
     () => [
-      Math.floor(Math.random() * 100),
-      Math.floor(Math.random() * 100),
+      randomNumber(100),
+      randomNumber(100),
     ],
-    (fill) => {
-      const operation = MATH_SYMBOLS[Math.floor(Math.random() * 3)];
-      operationList.push(operation);
-      return MATH_OPERATIONS[operation](fill[0], fill[1]);
-    },
+    (fill) => nod(fill[0], fill[1]),
   );
 
   console.log('What is the result of the expression?');
@@ -22,9 +25,7 @@ const calcGame = (name) => {
     values,
     rightAnswers,
     name,
-    (index) => `${values[index][0]} ${operationList[index]} ${values[index][1]}`,
+    (index) => `${values[index][0]} ${values[index][1]}`,
     (answer) => Number(answer),
   );
 };
-
-export default calcGame;

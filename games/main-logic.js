@@ -20,7 +20,7 @@ const mainLogic = (values, rightAnswers, name, cbQuestion, cbValueType) => {
 
   for (let i = 0; i < values.length; i += 1) {
     // Ask question
-    const answer = readlineSync.question(`Question: ${cbQuestion(i)}  `);
+    const answer = readlineSync.question(`Question: ${cbQuestion(i, rightAnswers[i])}  `);
 
     const answerValue = rightAnswers[i] === cbValueType(answer);
 
@@ -33,7 +33,7 @@ const mainLogic = (values, rightAnswers, name, cbQuestion, cbValueType) => {
 
     // Display answer
     console.log(`You answer: ${cbValueType(answer)}`);
-    console.log(answerValue ? 'Correct!' : 'Incorrect!');
+    console.log(answerValue ? 'Correct!' : `'${cbValueType(answer)}' is wrong answer ;(. Correct answer was '${rightAnswers[i]}'.`);
   }
 
   if (userAnswers.filter((item) => item !== true).length !== 0) {

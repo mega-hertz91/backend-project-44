@@ -1,16 +1,17 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
 import { MATH_SYMBOLS, MATH_OPERATIONS } from '../src/constants.js';
+import { randomNumber } from '../src/utils.js';
 
-const calcGame = (name) => {
+export default (name) => {
   const operationList = [];
 
   const { values, rightAnswers } = generateQuestions(
     () => [
-      Math.floor(Math.random() * 100),
-      Math.floor(Math.random() * 100),
+      randomNumber(100),
+      randomNumber(100),
     ],
     (fill) => {
-      const operation = MATH_SYMBOLS[Math.floor(Math.random() * 3)];
+      const operation = MATH_SYMBOLS[randomNumber(MATH_SYMBOLS.length)];
       operationList.push(operation);
       return MATH_OPERATIONS[operation](fill[0], fill[1]);
     },
@@ -26,5 +27,3 @@ const calcGame = (name) => {
     (answer) => Number(answer),
   );
 };
-
-export default calcGame;

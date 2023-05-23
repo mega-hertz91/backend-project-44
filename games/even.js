@@ -1,8 +1,9 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
+import { randomNumber } from '../src/utils.js';
 
-const evenGame = (name) => {
+export default (name) => {
   const { values, rightAnswers } = generateQuestions(
-    () => Math.floor(Math.random() * 100),
+    () => randomNumber(100),
     (fill) => ((fill % 2) === 0 ? 'yes' : 'no'),
   );
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -14,5 +15,3 @@ const evenGame = (name) => {
     (answer) => String(answer),
   );
 };
-
-export default evenGame;
