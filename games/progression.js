@@ -7,7 +7,7 @@ export default (name) => {
   const arrayQuestion = (items, answer) => {
     const result = [];
 
-    for (const item of items) {
+    for (let item = 0; item < items.length; item += 1) {
       if (item !== answer) {
         result.push(item);
       } else {
