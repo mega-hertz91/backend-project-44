@@ -7,6 +7,6 @@ import startGame from '../games/index.js';
 // Init player
 const name = getName();
 // Init game by name
-const game = startGame('even');
+const game = startGame('calc');
 // Start game
 game(name, GAME_ROUND_COUNT);
