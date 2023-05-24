@@ -13,8 +13,8 @@ export default (name) => {
 
   const { values, rightAnswers } = generateQuestions(
     () => [
-      randomNumber(100),
-      randomNumber(100),
+      randomNumber(10),
+      randomNumber(10),
     ],
     (fill) => nod(fill[0], fill[1]),
   );

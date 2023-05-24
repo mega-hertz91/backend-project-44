@@ -29,7 +29,7 @@ export default (name) => {
   };
 
   const numberItems = generateItemNumbers(
-    randomNumber(100),
+    randomNumber(30),
     randomNumber(3, 'ceil'),
   );
 

@@ -7,8 +7,8 @@ export default (name) => {
 
   const { values, rightAnswers } = generateQuestions(
     () => [
-      randomNumber(100),
-      randomNumber(100),
+      randomNumber(10),
+      randomNumber(10),
     ],
     (fill) => {
       const operation = MATH_SYMBOLS[randomNumber(MATH_SYMBOLS.length)];

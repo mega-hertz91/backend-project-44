@@ -7,5 +7,8 @@
  brain-calc: ;@echo "Run brain-calc....."; \
      node bin/brain-calc.js
 
+ brain-even: ;@echo "Run brain-even....."; \
+     node bin/brain-even.js
+
  publish: ;@echo "Publish brain-games....."; \
     npm publish --dry-run
