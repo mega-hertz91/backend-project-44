@@ -1,6 +1,6 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
-import { MATH_SYMBOLS, MATH_OPERATIONS } from '../src/constants.js';
-import { randomNumber } from '../src/utils.js';
+import { MATH_SYMBOLS, MATH_OPERATIONS } from '../constants.js';
+import { randomNumber } from '../utils.js';
 
 export default (name) => {
   const operationList = [];

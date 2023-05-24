@@ -1,5 +1,5 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
-import { randomNumber } from '../src/utils.js';
+import { randomNumber } from '../utils.js';
 
 const MATH_PROGRESS_ITEM = 8;
 
