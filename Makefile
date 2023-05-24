@@ -1,4 +1,4 @@
-install: ;@echo "Installing....."; \
+ install: ;@echo "Installing....."; \
 	npm ci
 
  brain-games: ;@echo "Run brain-games....."; \

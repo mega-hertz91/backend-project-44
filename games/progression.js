@@ -8,8 +8,8 @@ export default (name) => {
     const result = [];
 
     for (let item = 0; item < items.length; item += 1) {
-      if (item !== answer) {
-        result.push(item);
+      if (items[item] !== answer) {
+        result.push(items[item]);
       } else {
         result.push('...');
       }
@@ -29,7 +29,7 @@ export default (name) => {
   };
 
   const numberItems = generateItemNumbers(
-    randomNumber(200),
+    randomNumber(100),
     randomNumber(3, 'ceil'),
   );
 
