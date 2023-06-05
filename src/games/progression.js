@@ -1,5 +1,5 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
-import { randomNumber } from '../src/utils.js';
+import { randomNumber } from '../utils.js';
 
 const MATH_PROGRESS_ITEM = 8;
 
@@ -29,7 +29,7 @@ export default (name) => {
   };
 
   const numberItems = generateItemNumbers(
-    randomNumber(100),
+    randomNumber(30),
     randomNumber(3, 'ceil'),
   );
 

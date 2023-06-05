@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import getName from '../src/cli.js';
-import startGame from '../games/index.js';
+import startGame from '../src/games/index.js';
 
 // Init player
 const name = getName();

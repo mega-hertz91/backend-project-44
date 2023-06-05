@@ -1,5 +1,5 @@
 import { generateQuestions, mainLogic } from './main-logic.js';
-import { randomNumber } from '../src/utils.js';
+import { randomNumber } from '../utils.js';
 
 export default (name) => {
   const nod = (n, m) => {
@@ -13,8 +13,8 @@ export default (name) => {
 
   const { values, rightAnswers } = generateQuestions(
     () => [
-      randomNumber(100),
-      randomNumber(100),
+      randomNumber(10),
+      randomNumber(10),
     ],
     (fill) => nod(fill[0], fill[1]),
   );

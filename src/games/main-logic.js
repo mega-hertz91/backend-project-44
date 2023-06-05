@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { GAME_ROUND_COUNT } from '../src/constants.js';
+import { GAME_ROUND_COUNT } from '../constants.js';
 
 const generateQuestions = (cbValues, cbAnswers) => {
   const values = [];

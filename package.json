@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mega-hertz91/backend-project-44#readme",
   "dependencies": {
-    "backend-project-44": "git+https://github.com/mega-hertz91/backend-project-44.git",
+    "@hexlet/code": "github:mega-hertz91/backend-project-44",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
