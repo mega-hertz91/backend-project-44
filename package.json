@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "0.0.1",
-  "description": "Project for Hexlet ",
+  "description": "Project for Hexlet",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint .",
@@ -16,9 +16,12 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mega-hertz91/backend-project-44"
+    "url": "git+https://github.com/mega-hertz91/backend-project-44.git"
   },
   "author": "ibabushkin",
   "license": "ISC",
