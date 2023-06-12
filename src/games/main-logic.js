@@ -31,16 +31,17 @@ const mainLogic = (values, rightAnswers, name, cbQuestion, cbValueType) => {
       userAnswers.push(false);
     }
 
+    if (userAnswers.includes(false)) {
+      console.log(answerValue ? 'Correct!' : `'${cbValueType(answer)}' is wrong answer ;(. Correct answer was '${rightAnswers[i]}'.`);
+      console.log(`Let's try again, ${name} :(`);
+      process.exit(0);
+    }
+
     // Display answer
     console.log(`You answer: ${cbValueType(answer)}`);
-    console.log(answerValue ? 'Correct!' : `'${cbValueType(answer)}' is wrong answer ;(. Correct answer was '${rightAnswers[i]}'.`);
   }
 
-  if (userAnswers.filter((item) => item !== true).length !== 0) {
-    console.log(`Let's try again, ${name} :(`);
-  } else {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export { generateQuestions, mainLogic };
