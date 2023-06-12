@@ -33,7 +33,7 @@ const mainLogic = (values, rightAnswers, name, cbQuestion, cbValueType) => {
 
     if (userAnswers.includes(false)) {
       console.log(answerValue ? 'Correct!' : `'${cbValueType(answer)}' is wrong answer ;(. Correct answer was '${rightAnswers[i]}'.`);
-      console.log(`Let's try again, ${name} :(`);
+      console.log(`Let's try again, ${name}!`);
       process.exit(0);
     }
 
