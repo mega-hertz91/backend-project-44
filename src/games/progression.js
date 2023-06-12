@@ -11,7 +11,7 @@ export default (name) => {
       if (items[item] !== answer) {
         result.push(items[item]);
       } else {
-        result.push('...');
+        result.push('..');
       }
     }
 
