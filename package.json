@@ -26,11 +26,10 @@
   "author": "ibabushkin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mega-hertz91/backend-project-44"
+    "url": "https://github.com/mega-hertz91/backend-project-44/issues"
   },
   "homepage": "https://github.com/mega-hertz91/backend-project-44#readme",
   "dependencies": {
-    "@hexlet/code": "github:mega-hertz91/backend-project-44",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
