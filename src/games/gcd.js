@@ -19,7 +19,7 @@ export default (name) => {
     (fill) => nod(fill[0], fill[1]),
   );
 
-  console.log('What is the result of the expression?');
+  console.log('Find the greatest common divisor of given numbers.');
 
   mainLogic(
     values,
