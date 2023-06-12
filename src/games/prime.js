@@ -14,7 +14,7 @@ export default (name) => {
     (fill) => (isPrime(fill) ? 'yes' : 'no'),
   );
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
 
   mainLogic(
     values,
